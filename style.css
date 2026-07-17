@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'MyFont';
+    src: url('fonts/Linebeam.ttf');
+    }
+    
+    ::selection {
+        background-color: #00000000;
+    }
+    
+    a {color: inherit; text-decoration: none;}
+    p {
+    font-family: 'MyFont';
+    }
+    
+    body {background-color: #8f8e8c; overflow: hidden; }
+    
+    .doolf:hover {background-color: #bdbdbd;}
+    .doolf1:hover {background-color: #bdbdbd;}
+    .doolf2:hover {background-color: #bdbdbd;}
+    .doolf3:hover {background-color: #bdbdbd;}
+    .doolf4:hover {background-color: #bdbdbd;}
+    .doolf5:hover {background-color: #bdbdbd;}
+    .doolf6:hover {background-color: #bdbdbd;}
+    .doolf7:hover {background-color: #bdbdbd;}
+    .doolf8:hover {background-color: #bdbdbd;}
+    .doolf9:hover {background-color: #bdbdbd;}
+    .doolf10:hover {background-color: #bdbdbd;}
+    .doolf11:hover {background-color: #bdbdbd;}
+    .doolf12:hover {background-color: #bdbdbd;}
+    .doolf13:hover {background-color: #bdbdbd;}    
+    
+    .doolf:hover ~ .image1{background-image: url(images/d_o_o_l_f7b.png);}
+    .doolf1:hover ~ .image1{background-image: url(images/d_o_o_l_f8b.png);}
+    .doolf2:hover ~ .image1{background-image: url(images/d_o_o_l_f9b.png);}
+    .doolf3:hover ~ .image1{background-image: url(images/d_o_o_l_f10b.png);}
+    .doolf4:hover ~ .image1{background-image: url(images/d_o_o_l_f11b.png);}
+    .doolf5:hover ~ .image1{background-image: url(images/d_o_o_l_f11b.png);}
+    .doolf6:hover ~ .image1{background-image: url(images/d_o_o_l_f13b.png);}
+    .doolf7:hover ~ .image1{background-image: url(images/d_o_o_l_f2b.png);}
+    .doolf8:hover ~ .image1{background-image: url(images/d_o_o_l_f3b.png);}
+    .doolf9:hover ~ .image1{background-image: url(images/d_o_o_l_f4b.png);}
+    .doolf10:hover ~ .image1{background-image: url(images/d_o_o_l_f5b.png);}
+    .doolf11:hover ~ .image1{background-image: url(images/d_o_o_l_f6b.png);}
+    .doolf12:hover ~ .image1{background-image: url(images/d_o_o_l_f7b.png);}
+    
+    .doolf {left: 0%;}
+    .doolf1 {left: 7.7%;}
+    .doolf2 {left: 15.4%;}
+    .doolf3 {left: 23.1%;}
+    .doolf4 {left: 30.8%;}
+    .doolf5 {left: 38.5%;}
+    .doolf6 {left: 46.2%;}
+    .doolf7 {left: 53.9%;}
+    .doolf8 {left: 61.6%;}
+    .doolf9 {left: 69.3%;}
+    .doolf10 {left: 77%;}
+    .doolf11 {left: 84.7%;}
+    .doolf12 {left: 92.4%;}
+    
+    .image1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(images/d_o_o_l_f13b.png);
+        background-repeat: no-repeat;
+        background-size: 370px 285px;
+        width: 370px;
+        height: 285px;
+        margin: auto;
+        z-index: 2;
+    }
+    .doolf,
+    .doolf1,
+    .doolf2,
+    .doolf3,
+    .doolf4,
+    .doolf5,
+    .doolf6,
+    .doolf7,
+    .doolf8,
+    .doolf9,
+    .doolf10,
+    .doolf11,
+    .doolf12 {
+    position: fixed;
+    top: -1%;
+    height: 110%;
+    width: 7.7%;
+    z-index: 0;
+    outline:none;
+    transition: background-color 0.5s ease-out;
+}
+    
+    .hello {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 40px;
+        margin: 0;
+        color: #1b1a1a;
+    }
+    
+    .rld {
+        position: absolute;
+        margin: 0px;
+        top: 83%;
+        color: #8f8e8c;
+    }
+    .wo{
+        position: absolute;
+        margin: 0px;
+        top: 80%;   
+        color: #8f8e8c;
+    }
+    .doolf:focus {
+        outline: none;
+    }
+    
+.transition:hover {
+    transition: none;
+}
+.soundTrigger {
+        width: 370px;
+        height: 285px;
+}
+    
+#splash {
+  position: fixed; top: 0; left: 0; z-index: 999;
+  width: 100vw; height: 100vh;
+ 
+  display: flex;
+  align-items: center; justify-content: center;
+ 
+  font-size: 24px;
+  color: #fff; background: #383838;
+}
+ 
+#splash.hide {
+  opacity: 0; visibility: hidden;
+  transition: all 1s;
+}

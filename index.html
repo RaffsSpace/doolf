@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> doolf </title>
+    <link href="style.css" rel="stylesheet" />
+    
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+</head>
+<body>
+    
+    <div class = "doolf transition" S ></div>
+    <div class = "doolf1 transition" ></div>
+    <div class = "doolf2 transition" ></div>
+    <div class = "doolf3 transition" ></div>
+    <div class = "doolf4 transition" ></div>
+    <div class = "doolf5 transition" ></div>
+    <div class = "doolf6 transition" ></div>
+    <div class = "doolf7 transition" ></div>
+    <div class = "doolf8 transition" ></div>
+    <div class = "doolf9 transition" ></div>
+    <div class = "doolf10 transition" ></div>
+    <div class = "doolf11 transition" ></div>
+    <div class = "doolf12 transition" ></div>
+    <div class = "image1 soundTrigger"></div>
+    
+    <p class = "hello">D.O.O.L.F.</p>
+    
+    <p class = "wo">Hey.</p>
+    <p class = "rld">Don't You Have Somethings More Important To Do <a href = "home.html">Raff?</a></p>
+    
+    <div id="splash" onclick="start()"> Doolf...</div>
+ 
+    <audio id="bgMusic" loop>
+        <source src="audio/Dump.wav" type="audio/mpeg">
+    </audio>
+    
+<script>
+const bgMusic = document.getElementById("bgMusic");
+    
+const gnaar = new Audio("audio/bark.mp3");
+    
+const soundTrigger = document.querySelector(".soundTrigger");
+    
+soundTrigger.addEventListener("mouseenter", () => {
+    gnaar.volume = 0.2;
+    gnaar.currentTime = 0;
+    gnaar.play().catch;
+});
+    
+document.addEventListener("click", () => {
+    bgMusic.volume = 0.2;
+    bgMusic.play();
+}, { once: true });
+    
+function start() {
+    const splash = document.getElementById("splash");
+    
+    splash.addEventListener("transitionend", () => {
+        splash.remove();
+    });
+    
+    splash.classList.add("hide");
+}
+    
+document.addEventListener("dragstart", e => {
+    e.preventDefault();
+});
+</script>
+</body>    
+</html>
