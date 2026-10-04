@@ -29,19 +29,19 @@
     .doolf12:hover {background-color: #bdbdbd;}
     .doolf13:hover {background-color: #bdbdbd;}    
     
-    .doolf:hover ~ .image1{background-image: url(images/d_o_o_l_f7b.png);}
-    .doolf1:hover ~ .image1{background-image: url(images/d_o_o_l_f8b.png);}
-    .doolf2:hover ~ .image1{background-image: url(images/d_o_o_l_f9b.png);}
-    .doolf3:hover ~ .image1{background-image: url(images/d_o_o_l_f10b.png);}
-    .doolf4:hover ~ .image1{background-image: url(images/d_o_o_l_f11b.png);}
-    .doolf5:hover ~ .image1{background-image: url(images/d_o_o_l_f12b.png);}
-    .doolf6:hover ~ .image1{background-image: url(images/d_o_o_l_f13b.png);}
-    .doolf7:hover ~ .image1{background-image: url(images/d_o_o_l_f2b.png);}
-    .doolf8:hover ~ .image1{background-image: url(images/d_o_o_l_f3b.png);}
-    .doolf9:hover ~ .image1{background-image: url(images/d_o_o_l_f4b.png);}
-    .doolf10:hover ~ .image1{background-image: url(images/d_o_o_l_f5b.png);}
-    .doolf11:hover ~ .image1{background-image: url(images/d_o_o_l_f6b.png);}
-    .doolf12:hover ~ .image1{background-image: url(images/d_o_o_l_f7b.png);}
+    .doolf:hover ~ .image1{background-image: url(images/d_o_o_l_f7b.webp);}
+    .doolf1:hover ~ .image1{background-image: url(images/d_o_o_l_f8b.webp);}
+    .doolf2:hover ~ .image1{background-image: url(images/d_o_o_l_f9b.webp);}
+    .doolf3:hover ~ .image1{background-image: url(images/d_o_o_l_f10b.webp);}
+    .doolf4:hover ~ .image1{background-image: url(images/d_o_o_l_f11b.webp);}
+    .doolf5:hover ~ .image1{background-image: url(images/d_o_o_l_f11b.webp);}
+    .doolf6:hover ~ .image1{background-image: url(images/d_o_o_l_f13b.webp);}
+    .doolf7:hover ~ .image1{background-image: url(images/d_o_o_l_f2b.webp);}
+    .doolf8:hover ~ .image1{background-image: url(images/d_o_o_l_f3b.webp);}
+    .doolf9:hover ~ .image1{background-image: url(images/d_o_o_l_f4b.webp);}
+    .doolf10:hover ~ .image1{background-image: url(images/d_o_o_l_f5b.webp);}
+    .doolf11:hover ~ .image1{background-image: url(images/d_o_o_l_f6b.webp);}
+    .doolf12:hover ~ .image1{background-image: url(images/d_o_o_l_f7b.webp);}
     
     .doolf {left: 0%;}
     .doolf1 {left: 7.7%;}
@@ -63,7 +63,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: url(images/d_o_o_l_f13b.png);
+        background-image: url(images/d_o_o_l_f13b.webp);
         background-repeat: no-repeat;
         background-size: 370px 285px;
         width: 370px;
