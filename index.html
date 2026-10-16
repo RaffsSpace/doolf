@@ -3,7 +3,7 @@
     <head>
         <title>doolf</title>
         <link href="style.css" rel="stylesheet preload" />
-
+        
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.webp" />
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.webp" />
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
@@ -21,7 +21,7 @@
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
-
+        
         <link rel="preload" as="image" href="images/d_o_o_l_f2b.webp" />
         <link rel="preload" as="image" href="images/d_o_o_l_f3b.webp" />
         <link rel="preload" as="image" href="images/d_o_o_l_f4b.webp" />
@@ -35,7 +35,16 @@
         <link rel="preload" as="image" href="images/d_o_o_l_f11b.webp" />
         <link rel="preload" as="image" href="images/d_o_o_l_f13b.webp" />
     </head>
+    
     <body>
+        <div class="poopupmenu-box"> <p style="font-size: 30px; margin-bottom: 40px;">frequently asked questions: </p>
+            <center>
+            <div class="poopupmenu"> <a href="About me.html">who am I</a></div>
+            <div class="poopupmenu"> <p id="cameraText">who are you</p></div>
+            <div class="poopupmenu"> <a href="Gallery.html">my creations</a></div>
+            </center>
+        </div>
+        
         <div class="doolf transition"></div>
         <div class="doolf1 transition"></div>
         <div class="doolf2 transition"></div>
@@ -50,53 +59,17 @@
         <div class="doolf11 transition"></div>
         <div class="doolf12 transition"></div>
         <div class="image1 soundTrigger"></div>
-
+        
         <p class="hello">D.O.O.L.F.</p>
-
-        <p class="wo">Hey.</p>
-        <p class="rld">Don't You Have Somethings More Important To Do <a href="home.html">Raff?</a></p>
-
-        <div id="splash" onclick="start()">Doolf...</div>
-
+        
+        <p class="wo">Hey</p>
+        <p class="rld">Don't <a href="home.html">You</a> Have Anything Less Important Than This </p>
+        
+        <div id="splash" onclick="start()" style="font-family: 'NewWatch'; font-size: 250px">Doolf ! ! !</div>
         <audio id="bgMusic" loop>
             <source src="audio/Dump.wav" type="audio/mpeg" />
         </audio>
-
-        <script>
-            const bgMusic = document.getElementById("bgMusic");
-
-            const gnaar = new Audio("audio/bark.mp3");
-
-            const soundTrigger = document.querySelector(".soundTrigger");
-
-            soundTrigger.addEventListener("mouseenter", () => {
-                gnaar.volume = 0.2;
-                gnaar.currentTime = 0;
-                gnaar.play().catch;
-            });
-
-            document.addEventListener(
-                "click",
-                () => {
-                    bgMusic.volume = 0.2;
-                    bgMusic.play();
-                },
-                { once: true }
-            );
-
-            function start() {
-                const splash = document.getElementById("splash");
-
-                splash.addEventListener("transitionend", () => {
-                    splash.remove();
-                });
-
-                splash.classList.add("hide");
-            }
-
-            document.addEventListener("dragstart", (e) => {
-                e.preventDefault();
-            });
-        </script>
+        
+        <script src="script.js"> </script>
     </body>
 </html>

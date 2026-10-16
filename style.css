@@ -1,6 +1,22 @@
 @font-face {
-  font-family: 'MyFont';
+  font-family: 'LineBeam';
     src: url('fonts/Linebeam.ttf');
+    
+    }
+@font-face {
+  font-family: 'Relinquish';
+    src: url('fonts/Relinquish.ttf');
+  
+    }
+@font-face {
+  font-family: 'NewWatch';
+    src: url('fonts/New Watch.ttf');
+  
+    }
+@font-face {
+  font-family: 'Type';
+    src: url('fonts/typewcond_regular.otf');
+  
     }
     
     ::selection {
@@ -8,12 +24,116 @@
     }
     
     a {color: inherit; text-decoration: none;}
-    p {
-    font-family: 'MyFont';
+    body {background-color: #8f8e8c; overflow: hidden; font-family: 'LineBeam';}
+
+    .NAME {
+        font-family: 'Relinquish';
+        position: RELATIVE;
+        top: 200px;
+        right: 250px;
+        font-size: 70px;
+        background-color: white; 
+        width: 350px;
+        margin: 0;
+        z-index: 5;
+    }
+
+    .DESCRIPTION {
+        font-family: 'NewWatch';
+        position: RELATIVE;
+        top: 200px;
+        right: -150px;
+        font-size: 40px;
+        background-color: white; 
+        width: 1000px;
+        margin: 0;
+    }
+
+    .ONE {
+    position: relative;
+    top: -200px;
+    margin-left: -1400px;
+    height: 500px;
+    }
+
+    .TWO {
+    top: -200px;
+    position: relative;
+    margin-right: -1400px;
+    height: 500px;
+    }
+
+    .ABOUT {
+        position: absolute;
+        top: 700px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-family: 'NewWatch';
+        font-size: 25px;
+        color:black;
+        background-color:white;
+        text-align: justify;
+        margin: 0;
+        width: 441px;
     }
     
-    body {background-color: #8f8e8c; overflow: hidden; }
-    
+    .CREATION{
+        margin-top: 10px;
+        height: 500px;
+    }
+
+    .ME{
+        position: absolute;
+        top: 270px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 600px;
+        height: 370px;
+    }
+
+    .lock {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 800px;
+    }
+
+    .TITLE {
+        font-family: 'Relinquish';
+        font-size: 80px;
+        color:black;
+        background-color:white;
+        width: 350px;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .poopupmenu {
+    position: relative;
+    color: #1b1a1a;
+    z-index: 1;
+    cursor: pointer;
+    width: 150px;
+    overflow: visible;
+    margin-bottom: 40px;
+    }
+
+    .poopupmenu-box {
+    position: absolute;
+    top: 100px;
+    right: 1%;
+    color: #1b1a1a;
+    z-index: 1;
+    width: 250px;
+    overflow: visible;
+    text-align: center;
+    font-family: 'Relinquish';
+    background-color: #ffffff;
+    border: dashed 1px #000000;
+    }
+
+
     .doolf:hover {background-color: #bdbdbd;}
     .doolf1:hover {background-color: #bdbdbd;}
     .doolf2:hover {background-color: #bdbdbd;}
@@ -34,7 +154,7 @@
     .doolf2:hover ~ .image1{background-image: url(images/d_o_o_l_f9b.webp);}
     .doolf3:hover ~ .image1{background-image: url(images/d_o_o_l_f10b.webp);}
     .doolf4:hover ~ .image1{background-image: url(images/d_o_o_l_f11b.webp);}
-    .doolf5:hover ~ .image1{background-image: url(images/d_o_o_l_f11b.webp);}
+    .doolf5:hover ~ .image1{background-image: url(images/d_o_o_l_f12b.webp);}
     .doolf6:hover ~ .image1{background-image: url(images/d_o_o_l_f13b.webp);}
     .doolf7:hover ~ .image1{background-image: url(images/d_o_o_l_f2b.webp);}
     .doolf8:hover ~ .image1{background-image: url(images/d_o_o_l_f3b.webp);}
@@ -104,13 +224,13 @@
     
     .rld {
         position: absolute;
-        margin: 0px;
+        margin: 0;
         top: 83%;
         color: #8f8e8c;
     }
     .wo{
         position: absolute;
-        margin: 0px;
+        margin: 0;
         top: 80%;   
         color: #8f8e8c;
     }
