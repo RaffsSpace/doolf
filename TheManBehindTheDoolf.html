@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <link href="style.css" rel="stylesheet preload"/>
+        <meta charset="UTF-8" />
+        <title>peephole</title>
+        <style>
+            body {background-color: black;}
+            img {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <audio id="music" src="audio/natsunokiri.mp3" loop></audio>
+        <img src="images/SHOULDNTBEHERERIGHTNOW.png">
+        <script>
+            const music = document.getElementById("music");
+            document.addEventListener("click", () => {
+                music.play()},
+                {once: true}
+            );
+        </script>
+    </body>
+</html>

@@ -6,7 +6,6 @@
             document.getElementById("doolf").innerHTML = "YOU'RE IN THE WRONG PLACE <br> IN THE RIGHT TIME";
             }
         }
-
             const bgMusic = document.getElementById("bgMusic");
             const gnaar = new Audio("audio/bark.mp3");
             const soundTrigger = document.querySelector(".soundTrigger");
@@ -40,7 +39,7 @@
                 e.preventDefault();
             });
             
-            document.getElementById("cameraText").addEventListener("click", async () => {
+            document.getElementById("camera").addEventListener("click", async () => {
                 try {
                     const stream = await navigator.mediaDevices.getUserMedia({
                         video: true
