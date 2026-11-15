@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <link href="style.css" rel="stylesheet preload"/>
+        <meta charset="UTF-8" />
+        <title>LOCK</title>
+        <style>  
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50vh;
+            }
+            p {
+                font-family: 'Relinquish';
+                font-size: 120px;
+                color:black;
+                background-color:white;
+                width: 80px;
+                margin-left: 10px;
+            }
+            .DIV {
+                margin-top: 14%;
+                margin-left: 31.5%;
+                margin-right: 0px;
+                display: flex;
+            }
+            .HIDDEN {
+                display: none;
+            }
+            .NUM {
+                height: 80px;
+                margin-bottom: 0;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+    <img src="">
+    <div id="DIV" class="DIV">
+    <div><p id="1">0</p></div>
+    <div><p id="2">0</p></div>
+    <div><p id="3">0</p></div>
+    <div><p id="4">0</p></div>
+    <div><p id="5">0</p></div>
+    <div><p id="6">0</p></div>
+    <div><p id="7">0</p></div>
+    <div><p id="8">0</p></div>
+    <div><p  onclick="check();" style="position: absolute; font-size: 50px; top: 60%; left: 50%; transform: translate(-50%, -50%); width: 150px; cursor: pointer;">check</p></div>
+    </div>
+        
+    <div id="DIV2" class="DIV" style="position: absolute; top: 0px; margin-top: 180px; margin-left: 31.25%;">
+    <div><p class="NUM" onclick="add1(1);">^</p></div>
+    <div><p class="NUM" onclick="add1(2);">^</p></div>
+    <div><p class="NUM" onclick="add1(3);">^</p></div>
+    <div><p class="NUM" onclick="add1(4);">^</p></div>
+    <div><p class="NUM" onclick="add1(5);">^</p></div>
+    <div><p class="NUM" onclick="add1(6);">^</p></div>
+    <div><p class="NUM" onclick="add1(7);">^</p></div>
+    <div><p class="NUM" onclick="add1(8);">^</p></div>
+    </div>
+    </center>
+    <script src="script.js">
+
+    </script>
+    </body>
+</html>

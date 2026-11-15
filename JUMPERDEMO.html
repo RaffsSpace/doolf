@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <link href="style.css" rel="stylesheet preload"/>
+        <meta charset="UTF-8"/>
+        <title>JUMPJUMP</title>
+        <style>
+            body {background-image: url(images/ONETWO12.gif);}
+            .JUMPER {
+                position: absolute;
+                top: 49%;
+                left: 35%;
+                transform: translate(-50%, -50%);
+                width: 50vh;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="TITLE" style="position: absolute; font-size: 120px; width: 700px; text-align: center; right: 2vh;"> JUMPER DEMO </p>
+        <p class="DESCRIPTION" style="position: absolute; width: 550px; text-align: justify; right: 2vh; top: 23.6vh;"> MAKE IT JUMP. PRESS THE BUTTONS. STOP TO STOP IT AND JUMP TO JUMP IT. <br> GENIUS MINDESET, </p>
+        <img class="JUMPER" src="images/FRAMES/FRAMEFRAMEFRAMEFRAMEFRAMEFRAME.png" style="z-index: 1; width: 670px; height: 700px;">
+        <video id="JUMPER" loop class="JUMPER" > <source src="videos/JUMPERDEMO.mp4" type="video/mp4"> </video>
+        <p class="TITLE" style="position: absolute; left: 147.1vh; bottom: 49vh; width: 250px; margin: 0; text-align: center; cursor: pointer;" onclick="played();"> JUMP!!! </p>
+        <p class="TITLE" style="position: absolute; left: 179.9vh; bottom: 49vh; width: 250px; margin: 0; text-align: center; cursor: pointer;" onclick="paused();"> STOP </p>
+        <script>
+            var x = document.getElementById("JUMPER");
+            function played(){
+                    x.play();
+            }
+            function paused(){
+                    x.currentTime = 0;
+                    x.pause();
+            }
+        </script>
+    </body>
+</html>

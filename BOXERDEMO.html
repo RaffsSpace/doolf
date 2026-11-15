@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <title>BOXER</title>
+        <link href="style.css" rel="stylesheet preload" />
+        <style>
+            body {background-image: url(images/ONETWO12.gif);}
+            img {
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+                width: 50vh;
+            }    
+        </style>
+    </head>
+    <body>
+        <p class="TITLE" style="position: relative; font-size: 120px; width: 600px; text-align: center; left: 1vh;"> BOXER DEMO</p>
+        <p class="DESCRIPTION" style="width:450px; text-align: justify; left: 1vh; top: auto;">THIS IS TEMPORARY FIX FOR DEMOS. SPECIALLY MADE SITE FOR A SPECIAL CREATION. REVUTIONALY INVENTENTIONS BY ME AND AND HONLY ME. <br> PRESS RIGHT AND LEFT ARROW TO CYCLE THROUGH ALL ANGLES OF BOXER. TAKE A LOOK AND OBSERVE THE COMPLEXITY OF THIS NEW REVULUTION TECHNOLOGY IN ALL IT'S BUITY. <br><br> GENIUS MINDESET.</p>
+        <img id="BOXER" src="images/BOXER0.png" style="width: 420px; border: groove; border-color: white; border-width: 8px;">
+        <p class="TITLE" style="position: absolute; left: 100vh; bottom: 15vh; width: fit-content; margin: 0; cursor: pointer;" onclick="notadd(); LQWHUYHQWLRQ();"> &lt;-- </p>
+        <p id="NUM" class="TITLE" style="position: absolute; left: 123vh; bottom: 15vh; width: 55px; margin: 0; text-align: center; cursor: pointer;"> 0 </p>
+        <p class="TITLE" style="position: absolute; left: 140vh; bottom: 15vh; width: fit-content; margin: 0; cursor: pointer;" onclick="add(); LQWHUYHQWLRQ();"> --> </p>
+        <script src="script.js" defer> </script>
+        <script>
+            let n = 0;
+            function add(){
+                n++;
+                if (n > 7){
+                    n = 0;
+                    document.getElementById("BOXER").src = "images/BOXER" + 0 + ".png";
+                    document.getElementById("NUM").innerText = n;
+                 }
+                document.getElementById("BOXER").src = "images/BOXER" + n + ".png";
+                document.getElementById("NUM").innerText = n;
+            }
+            
+            function notadd (){
+                n--;
+                if (n < 0){
+                    n = 7;
+                    document.getElementById("BOXER").src = "images/BOXER" + 7 + ".png";
+                    document.getElementById("NUM").innerText = n;
+                 }
+                document.getElementById("BOXER").src = "images/BOXER" + n + ".png";
+                document.getElementById("NUM").innerText = n;
+            }
+        </script>
+        </body>
+</html>
