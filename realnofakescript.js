@@ -49,3 +49,37 @@
             } catch (error) {
             }
         });
+            function LQWHUYHQWLRQ() {
+                let ME = Math.floor(Math.random()*34);
+                if (ME == 33){
+                    document.getElementById("BOXER").src = "images/DE5544D.png";
+                    document.getElementById("NUM").innerHTML = "<a href='https://doolf.net/lock'>333333333333333333333333333</a>";
+                }
+            } 
+            
+            function check() {
+            if (document.getElementById('1').innerText == "2" && document.getElementById('2').innerText == "0" && document.getElementById('3').innerText == "0" && document.getElementById('4').innerText == "9" && document.getElementById('5').innerText == "0" && document.getElementById('6').innerText == "1" && document.getElementById('7').innerText == "2" && document.getElementById('8').innerText == "6") 
+                {
+                document.getElementById('DIV').className = "HIDDEN";
+                document.getElementById('DIV2').className = "HIDDEN";
+                document.getElementsByTagName('img')[0].src = "images/doyou.png";
+                }
+            else {
+                document.getElementById('1').innerText = "0";
+                document.getElementById('2').innerText = "0";
+                document.getElementById('3').innerText = "0";
+                document.getElementById('4').innerText = "0";
+                document.getElementById('5').innerText = "0";
+                document.getElementById('6').innerText = "0";
+                document.getElementById('7').innerText = "0";
+                document.getElementById('8').innerText = "0";
+            }
+        }
+            function add1(n) {
+                let num = (document.getElementById(n).innerText);
+                num++;
+                if (num > 9){
+                    num = 0;
+                }
+                document.getElementById(n).innerText = num;
+            }
